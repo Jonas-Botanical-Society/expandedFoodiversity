@@ -1,0 +1,16 @@
+{
+  "$schema": "https://moddbcdn.vintagestory.at/schema/modinfo.latest.json",
+  "type": "Code",
+  "modid": "expandedfoodiversity",
+  "name": "Expanded Foodiversity",
+  "side": "universal",
+  "authors": [
+    "Fuego Fish"
+  ],
+  "website": "https://discord.com/invite/w79wShAD8q",
+  "description": "Lorum Ipsum",
+  "version": "1.0.0",
+  "dependencies": {
+    "game": "1.22.0"
+  }
+}
