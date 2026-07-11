@@ -1,0 +1,175 @@
+{
+	"code": "BDCcookedchoppedvegetable",
+	"maxstacksize": 64,
+    "variantgroups": [
+		{ "code": "type", "states": ["leek", "potato", "tomato", "butternutsquash", "naplessquash" ] },
+		{ "code": "state", "states": ["partbaked", "perfect", "charred" ] }
+	],
+
+	"creativeinventory": { "general": ["*"], "items": ["*"], "expandedfoods": ["*"], "foodiversity": ["*"] },
+	"shape": { "base": "item/food/veggies/chopped/{type}" },
+	"textures": {
+		"leek": {"base": "item/food/veggie/{state}/chopped/leek"},
+		"potato": {"base": "item/food/veggie/{state}/potato"},
+		"tomato": {"base": "item/food/veggie/{state}/tomato"},
+		"butternutsquash": {"base": "item/food/veggie/{state}/butternutsquash"},
+		"naplessquash": {"base": "item/food/veggie/{state}/naplessquash"}
+	},
+	"materialDensity": 600,
+	"attributes": {
+		"displaycaseable": true,
+		"shelvable": true,
+		"handbook": { 
+			"groupBy": [ "BDCcookedchoppedvegetable-*" ],
+			"extraSections": [{ "title": "expandedfoods:item-handbooktitle-cookedchoppedvegetable", "text": "expandedfoods:item-handbooktext-cookedchoppedvegetable" }]
+		}
+	},
+	
+	"attributesByType": {
+		"*-partbaked": {
+			"bakingProperties": {
+				"temp": 100,
+				"levelFrom": 0.25,
+				"levelTo": 0.5,
+				"startScaleY": 1.0,
+				"endScaleY": 0.9,
+				"resultCode": "foodiversity:BDCcookedchoppedvegetable-{type}-perfect",
+				"initialCode": "foodiversity:BDCchoppedvegetable-{type}"
+				}
+		},
+		"*-perfect": {
+			"bakingProperties": {
+				"temp": 100,
+				"levelFrom": 0.5,
+				"levelTo": 0.75,
+				"startScaleY": 0.9,
+				"endScaleY": 0.8,
+				"resultCode": "foodiversity:BDCcookedchoppedvegetable-{type}-charred",
+				"initialCode": "foodiversity:BDCcookedchoppedvegetable-{type}-partbaked"
+				}
+		},
+		"*-charred": {
+			"bakingProperties": {
+				"temp": 100,
+				"levelFrom": 0.75,
+				"levelTo": 1,
+				"startScaleY": 0.8,
+				"endScaleY": 0.7,
+				"initialCode": "foodiversity:BDCcookedchoppedvegetable-{type}-perfect"
+				}
+			}
+	},
+	"combustiblePropsByType": {
+		"@*-(partbaked|perfect)": {
+			"meltingPoint": 150,
+			"meltingDuration": 20,
+			"smeltedRatio": 1,
+			"smeltingType": "bake",
+			"smeltedStack": { "type": "item", "code": "foodiversity:BDCcookedchoppedvegetable-{type}-charred" },
+			"requiresContainer": false
+		}
+	},
+	"nutritionPropsByType": {
+		"*-potato-partbaked": { "satiety": 120, "foodcategory": "Vegetable" },
+		"@*-(butternutsquash|naplessquash)-partbaked": { "satiety": 90, "foodcategory": "Vegetable" },
+		"*-partbaked": { "satiety": 110, "foodcategory": "Vegetable" },
+
+		"*-potato-perfect": { "satiety": 155, "foodcategory": "Vegetable" },
+		"@*-(butternutsquash|naplessquash)-perfect": { "satiety": 120, "foodcategory": "Vegetable" },
+		"*-perfect": { "satiety": 140, "foodcategory": "Vegetable" },
+
+		"*-potato-charred": { "satiety": 135, "foodcategory": "Vegetable" },
+		"@*-(butternutsquash|naplessquash)-charred": { "satiety": 100, "foodcategory": "Vegetable" },
+		"*-charred": { "satiety": 125, "foodcategory": "Vegetable" }
+	},
+	
+	"transitionablePropsByType": {
+		"@*-tomato-(partbaked|perfect)": [{
+      		"type": "Perish",
+      		"freshHours": { "avg": 220 },
+      		"transitionHours": { "avg": 90 },
+      		"transitionedStack": { "type": "item", "code": "game:rot" },
+      		"transitionRatio": 1
+    	}],
+		"@*-leek-(partbaked|perfect)": [{
+      		"type": "Perish",
+      		"freshHours": { "avg": 390 },
+      		"transitionHours": { "avg": 100 },
+      		"transitionedStack": { "type": "item", "code": "game:rot" },
+      		"transitionRatio": 1
+    	}],
+		"@*-potato-(partbaked|perfect)": [{
+      		"type": "Perish",
+      		"freshHours": { "avg": 600 },
+      		"transitionHours": { "avg": 170 },
+      		"transitionedStack": { "type": "item", "code": "game:rot" },
+      		"transitionRatio": 1
+    	}],
+    	"@*-butternutsquash-(partbaked|perfect)": [{
+      		"type": "Perish",
+      		"freshHours": { "avg": 400 },
+      		"transitionHours": { "avg": 100 },
+      		"transitionedStack": { "type": "item", "code": "game:rot" },
+      		"transitionRatio": 1
+    	}],
+		"@*-naplessquash-(partbaked|perfect)": [{
+      		"type": "Perish",
+      		"freshHours": { "avg": 400 },
+      		"transitionHours": { "avg": 100 },
+      		"transitionedStack": { "type": "item", "code": "game:rot" },
+      		"transitionRatio": 1
+    	}],		
+	
+		"*-tomato-charred": [{
+			"type": "Perish",
+			"freshHours": { "avg": 350 },
+			"transitionHours": { "avg": 100 },
+			"transitionedStack": { "type": "item", "code": "game:rot" },
+			"transitionRatio": 1
+		}],
+		"*-leek-charred": [{
+			"type": "Perish",
+			"freshHours": { "avg": 430 },
+			"transitionHours": { "avg": 120 },
+			"transitionedStack": { "type": "item", "code": "game:rot" },
+			"transitionRatio": 1
+		}],
+		"*-potato-charred": [{
+			"type": "Perish",
+			"freshHours": { "avg": 900 },
+			"transitionHours": { "avg": 200 },
+			"transitionedStack": { "type": "item", "code": "game:rot" },
+			"transitionRatio": 1
+		}],
+		"@*-(butternutsquash|naplessquash)-charred": [{
+			"type": "Perish",
+			"freshHours": { "avg": 700 },
+			"transitionHours": { "avg": 150 },
+			"transitionedStack": { "type": "item", "code": "game:rot" },
+			"transitionRatio": 1
+		}],
+		"*-charred": [{
+			"type": "Perish",
+			"freshHours": { "avg":  350 },
+			"transitionHours": { "avg": 100 },
+			"transitionedStack": { "type": "item", "code": "game:rot" },
+			"transitionRatio": 1
+		}]
+	},
+	
+	"guiTransformByType": {
+		"*": {
+			"translation": { "x": -1.73, "y": -0.42, "z": -2 },
+			"rotation": { "x": 1, "y": -10, "z": 0 },
+			"origin": { "x": 0.5, "y": 0.1, "z": 0.5 },
+			"scale": 0.25
+		}
+	},
+	"groundTransformByType": {
+		"*": {
+			"translation": { "x": 0, "y": 0, "z": 0 },
+			"rotation": { "x": 0, "y": 0, "z": 0 },
+			"origin": { "x": 0.5, "y": 0, "z": 0.5 },
+			"scale": 1.5
+		}
+}
