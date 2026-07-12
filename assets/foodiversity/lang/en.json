@@ -1,0 +1,35 @@
+{
+	"item-potatopeelings": "Potato peelings",
+	"item-BDCchoppedvegetable-leek": "Chopped leek",
+	"item-BDCchoppedvegetable-potato": "Chopped potato",
+	"item-BDCchoppedvegetable-peeledpotato": "Chopped peeled potato",
+	"item-BDCchoppedvegetable-tomato": "Chopped tomato",
+	"item-BDCchoppedvegetable-butternutsquash": "Chopped butternut squash",
+	"item-BDCchoppedvegetable-naplessquash": "Chopped naples long squash",
+	"itemdesc-BDCchoppedvegetable-*": "Chopped away all the inedible bits!",
+	
+	"item-BDCcookedchoppedvegetable-leek-partbaked": "Cooked chopped leek (part-baked)",
+	"item-BDCcookedchoppedvegetable-potato-partbaked": "Cooked chopped potato (part-baked)",
+	"item-BDCcookedchoppedvegetable-peeledpotato-partbaked": "Cooked chopped peeled potato (part-baked)",
+	"item-BDCcookedchoppedvegetable-tomato-partbaked": "Cooked chopped tomato (part-baked)",
+	"item-BDCcookedchoppedvegetable-butternutsquash-partbaked": "Cooked chopped butternut squash (part-baked)",
+	"item-BDCcookedchoppedvegetable-naplessquash-partbaked": "Cooked chopped naples long squash (part-baked)",
+	
+	"item-BDCcookedchoppedvegetable-leek-perfect": "Cooked chopped leek",
+	"item-BDCcookedchoppedvegetable-potato-perfect": "Cooked chopped potato",
+	"item-BDCcookedchoppedvegetable-peeledpotato-perfect": "Cooked chopped peeled potato",
+	"item-BDCcookedchoppedvegetable-tomato-perfect": "Cooked chopped tomato",
+	"item-BDCcookedchoppedvegetable-butternutsquash-perfect": "Cooked chopped butternut squash",
+	"item-BDCcookedchoppedvegetable-naplessquash-perfect": "Cooked chopped naples long squash",
+	
+	"item-BDCcookedchoppedvegetable-leek-charred": "Cooked chopped leek (charred)",
+	"item-BDCcookedchoppedvegetable-potato-charred": "Cooked chopped potato (charred)",
+	"item-BDCcookedchoppedvegetable-peeledpotato-charred": "Cooked chopped peeled potato (charred)",
+	"item-BDCcookedchoppedvegetable-tomato-charred": "Cooked chopped tomato (charred)",
+	"item-BDCcookedchoppedvegetable-butternutsquash-charred": "Cooked chopped butternut squash (charred)",
+	"item-BDCcookedchoppedvegetable-naplessquash-charred": "Cooked chopped naples long squash (charred)",
+	
+	"itemdesc-BDCcookedchoppedvegetable-*-partbaked": "Could use a bit more baking...",
+	"itemdesc-BDCcookedchoppedvegetable-*-perfect": "Perfectly cooked and delicious!",
+	"itemdesc-BDCcookedchoppedvegetable-*-charred": "It's overcooked, but at least it lasts longer...",
+}

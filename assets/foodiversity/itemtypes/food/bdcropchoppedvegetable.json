@@ -2,7 +2,8 @@
 	"code": "BDCchoppedvegetable",
 	"maxstacksize": 64,
     "variantgroups": [
-		{ "code": "type", "states": ["leek", "potato", "tomato", "butternutsquash", "naplessquash" ] }
+		{ "code": "type", "states": [ "leek", "potato", "peeledpotato", "tomato", "butternutsquash", "naplessquash" ] }
+		],
 	"attributes": {
       "displaycaseable": true,
       "shelvable": true,
@@ -27,7 +28,7 @@
 	"shape": { "base": "item/food/veggies/chopped/{type}" },
 	"creativeinventory": { "general": ["*"], "items": ["*"], "expandedfoods": ["*"], "foodiversity": ["*"] },
 	"nutritionPropsByType": {
-		"*-potato": { "satiety": 110, "foodcategory": "Vegetable" },
+		"@*-(potato|peeledpotato)": { "satiety": 110, "foodcategory": "Vegetable" },
 		"@*-(butternutsquash|naplessquash)": { "satiety": 140, "foodcategory": "Vegetable" },
 		"*": { "satiety": 100, "foodcategory": "Vegetable" }
 	},
@@ -56,7 +57,7 @@
 			"transitionedStack": { "type": "item", "code": "game:rot" },
 			"transitionRatio": 0.5
 		}],
-		"*-potato": [{
+		"@*-(potato|peeledpotato)": [{
 			"type": "Perish",
 			"freshHours": { "avg": 548 },
 			"transitionHours": { "avg": 48 },
@@ -69,7 +70,7 @@
 			"transitionHours": { "avg": 48 },
 			"transitionedStack": { "type": "item", "code": "game:rot" },
 			"transitionRatio": 0.5
-		}]
+		}],
 		"*": [{
 			"type": "Perish",
 			"freshHours": { "avg":  200 },

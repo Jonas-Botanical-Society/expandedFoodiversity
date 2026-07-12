@@ -1,0 +1,32 @@
+[
+	{
+		"ingredientPattern": "KP",
+		"ingredients": {
+			"K": { "type": "item", "tags": ["tool-knife"], "isTool": true },
+			"P": { "type": "item", "code": "bdcrop:vegetable-potato", "quantity": 1 }
+		},
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "foodiversity:BDCchoppedvegetable-potato", "quantity": 1 }
+	},
+	{
+		"ingredientPattern": "PK",
+		"ingredients": {
+			"K": { "type": "item", "tags": ["tool-knife"], "isTool": true },
+			"P": { "type": "item", "code": "bdcrop:vegetable-potato", "quantity": 1, "returnedStack": { "type": "item", "code": "foodiversity:potatopeelings", "quantity": 1 } }
+		},
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "foodiversity:vegetable-peeledpotato", "quantity": 1 }
+	},
+	{
+		"ingredientPattern": "KP",
+		"ingredients": {
+			"K": { "type": "item", "tags": ["tool-knife"], "isTool": true },
+			"P": { "type": "item", "code": "foodiversity:vegetable-peeledpotato", "quantity": 1 }
+		},
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "foodiversity:BDCchoppedvegetable-peeledpotato", "quantity": 1 }
+	}
+]

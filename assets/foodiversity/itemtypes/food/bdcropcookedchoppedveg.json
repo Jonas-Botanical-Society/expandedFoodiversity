@@ -2,7 +2,7 @@
 	"code": "BDCcookedchoppedvegetable",
 	"maxstacksize": 64,
     "variantgroups": [
-		{ "code": "type", "states": ["leek", "potato", "tomato", "butternutsquash", "naplessquash" ] },
+		{ "code": "type", "states": ["leek", "potato", "peeledpotato", "tomato", "butternutsquash", "naplessquash" ] },
 		{ "code": "state", "states": ["partbaked", "perfect", "charred" ] }
 	],
 
@@ -70,15 +70,15 @@
 		}
 	},
 	"nutritionPropsByType": {
-		"*-potato-partbaked": { "satiety": 120, "foodcategory": "Vegetable" },
+		"@*-(potato|peeledpotato)-partbaked": { "satiety": 120, "foodcategory": "Vegetable" },
 		"@*-(butternutsquash|naplessquash)-partbaked": { "satiety": 90, "foodcategory": "Vegetable" },
 		"*-partbaked": { "satiety": 110, "foodcategory": "Vegetable" },
 
-		"*-potato-perfect": { "satiety": 155, "foodcategory": "Vegetable" },
+		"@*-(potato|peeledpotato)-perfect": { "satiety": 155, "foodcategory": "Vegetable" },
 		"@*-(butternutsquash|naplessquash)-perfect": { "satiety": 120, "foodcategory": "Vegetable" },
 		"*-perfect": { "satiety": 140, "foodcategory": "Vegetable" },
 
-		"*-potato-charred": { "satiety": 135, "foodcategory": "Vegetable" },
+		"@*-(potato|peeledpotato)-charred": { "satiety": 135, "foodcategory": "Vegetable" },
 		"@*-(butternutsquash|naplessquash)-charred": { "satiety": 100, "foodcategory": "Vegetable" },
 		"*-charred": { "satiety": 125, "foodcategory": "Vegetable" }
 	},
@@ -99,6 +99,13 @@
       		"transitionRatio": 1
     	}],
 		"@*-potato-(partbaked|perfect)": [{
+      		"type": "Perish",
+      		"freshHours": { "avg": 600 },
+      		"transitionHours": { "avg": 170 },
+      		"transitionedStack": { "type": "item", "code": "game:rot" },
+      		"transitionRatio": 1
+    	}],
+		"@*-peeledpotato-(partbaked|perfect)": [{
       		"type": "Perish",
       		"freshHours": { "avg": 600 },
       		"transitionHours": { "avg": 170 },
@@ -134,7 +141,7 @@
 			"transitionedStack": { "type": "item", "code": "game:rot" },
 			"transitionRatio": 1
 		}],
-		"*-potato-charred": [{
+		"@*-(potato|peeledpotato)-charred": [{
 			"type": "Perish",
 			"freshHours": { "avg": 900 },
 			"transitionHours": { "avg": 200 },
