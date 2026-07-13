@@ -9,7 +9,7 @@
 		"potato": [16,16]
 	},
 	"textures": {
-		"potato": "bdcrop:item/food/veggie/potato"
+		"potato": "foodiversity:item/food/veggie/potato"
 	},
 	"elements": [
 		{

@@ -1,0 +1,62 @@
+[
+	{
+		"ingredientPattern": "KP",
+		"ingredients": {
+			"K": { "type": "item", "tags": ["tool-knife"], "isTool": true },
+			"P": { "type": "item", "code": "foodiversity:BDCcookedvegetable-*-partbaked", "name": "type", "quantity": 1 }
+		},
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "foodiversity:BDCcookedchoppedvegetable-{type}-partbaked", "quantity": 1 }
+	},
+	{
+		"ingredientPattern": "KP",
+		"ingredients": {
+			"K": { "type": "item", "tags": ["tool-cleaver"], "isTool": true },
+			"P": { "type": "item", "code": "foodiversity:BDCcookedvegetable-*-partbaked", "name": "type", "quantity": 1 }
+		},
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "foodiversity:BDCcookedchoppedvegetable-{type}-partbaked", "quantity": 1 }
+	},
+	{
+		"ingredientPattern": "KP",
+		"ingredients": {
+			"K": { "type": "item", "tags": ["tool-knife"], "isTool": true },
+			"P": { "type": "item", "code": "foodiversity:BDCcookedvegetable-*-perfect", "name": "type", "quantity": 1 }
+		},
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "foodiversity:BDCcookedchoppedvegetable-{type}-perfect", "quantity": 1 }
+	},
+	{
+		"ingredientPattern": "KP",
+		"ingredients": {
+			"K": { "type": "item", "tags": ["tool-cleaver"], "isTool": true },
+			"P": { "type": "item", "code": "foodiversity:BDCcookedvegetable-*-perfect", "name": "type", "quantity": 1 }
+		},
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "foodiversity:BDCcookedchoppedvegetable-{type}-perfect", "quantity": 1 }
+	},
+	{
+		"ingredientPattern": "KP",
+		"ingredients": {
+			"K": { "type": "item", "tags": ["tool-knife"], "isTool": true },
+			"P": { "type": "item", "code": "foodiversity:BDCcookedvegetable-*-charred", "name": "type", "quantity": 1 }
+		},
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "foodiversity:BDCcookedchoppedvegetable-{type}-charred", "quantity": 1 }
+	},
+	{
+		"ingredientPattern": "KP",
+		"ingredients": {
+			"K": { "type": "item", "tags": ["tool-cleaver"], "isTool": true },
+			"P": { "type": "item", "code": "foodiversity:BDCcookedvegetable-*-charred", "name": "type", "quantity": 1 }
+		},
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "foodiversity:BDCcookedchoppedvegetable-{type}-charred", "quantity": 1 }
+	}
+]

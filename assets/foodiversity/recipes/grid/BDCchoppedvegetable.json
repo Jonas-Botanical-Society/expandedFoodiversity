@@ -1,0 +1,22 @@
+[
+	{
+		"ingredientPattern": "KV",
+		"ingredients": {
+			"K": { "type": "item", "tags": ["tool-knife"], "isTool": true },
+			"V": { "type": "item", "code": "bdcrop:vegetable-*", "name": "type", "skipVariants": ["alfalfa"], "quantity": 1 }
+		},
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "foodiversity:BDCchoppedvegetable-{type}", "quantity": 1 }
+	},
+	{
+		"ingredientPattern": "KV",
+		"ingredients": {
+			"K": { "type": "item", "tags": ["tool-cleaver"], "isTool": true },
+			"V": { "type": "item", "code": "bdcrop:vegetable-*", "name": "type", "skipVariants": ["alfalfa"], "quantity": 1 }
+		},
+		"width": 1,
+		"height": 2,
+		"output": { "type": "item", "code": "foodiversity:BDCchoppedvegetable-{type}", "quantity": 1 }
+	}
+]
