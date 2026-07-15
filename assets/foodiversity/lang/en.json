@@ -67,5 +67,62 @@
 	"item-bdcgelatin-brusselsprouts": "Brussel sprout gelatin",
 	"item-bdcgelatin-butternutsquash": "Butternut squash gelatin",
 	
-	"itemdesc-bdcgelatin-*": "It's slightly savory..."
+	"itemdesc-bdcgelatin-*": "It's slightly savory...",
+	"itemdesc-bdcfruitsyrupportion-*": "Thick, sweet, good on treats!",
+	
+	"item-bdcfruitsyrupportion-cantaloupe": "Cantaloupe syrup portion",
+	"item-bdcfruitsyrupportion-honeydewmelon": "Honeydew melon syrup portion",
+	"item-bdcfruitsyrupportion-mirzamelon": "Mirza melon syrup portion",
+	"item-bdcfruitsyrupportion-watermelon": "Watermelon syrup portion",
+	
+	"incontainer-item-bdcfruitsyrupportion-cantaloupe": "Cantaloupe syrup",
+	"incontainer-item-bdcfruitsyrupportion-honeydewmelon": "Honeydew melon syrup",
+	"incontainer-item-bdcfruitsyrupportion-mirzamelon": "Mirza melon syrup",
+	"incontainer-item-bdcfruitsyrupportion-watermelon": "Watermelon syrup",
+	
+	"item-bdcstrongwineportion-cantaloupe": "Strong cantaloupe wine portion",
+	"incontainer-item-bdcstrongwineportion-cantaloupe": "Strong cantaloupe wine",
+	"item-bdcpotentwineportion-cantaloupe": "Fine cantaloupe wine portion",
+	"incontainer-item-bdcpotentwineportion-cantaloupe": "Fine cantaloupe wine",
+	"item-bdcstrongspiritportion-cantaloupe": "Aged cantaloupe brandy portion",
+	"incontainer-item-bdcstrongspiritportion-cantaloupe": "Aged cantaloupe brandy",
+	"item-bdcpotentspiritportion-cantaloupe": "Vintage cantaloupe brandy portion",
+	"incontainer-item-bdcpotentspiritportion-cantaloupe": "Vintage cantaloupe brandy",
+	
+	"item-bdcstrongwineportion-honeydewmelon": "Strong honeydew melon wine portion",
+	"incontainer-item-bdcstrongwineportion-honeydewmelon": "Strong honeydew melon wine",
+	"item-bdcpotentwineportion-honeydewmelon": "Fine honeydew melon wine portion",
+	"incontainer-item-bdcpotentwineportion-honeydewmelon": "Fine honeydew melon wine",
+	"item-bdcstrongspiritportion-honeydewmelon": "Aged honeydew melon brandy portion",
+	"incontainer-item-bdcstrongspiritportion-honeydewmelon": "Aged honeydew melon brandy",
+	"item-bdcpotentspiritportion-honeydewmelon": "Vintage honeydew melon brandy portion",
+	"incontainer-item-bdcpotentspiritportion-honeydewmelon": "Vintage honeydew melon brandy",
+	
+	"item-bdcstrongwineportion-mirzamelon": "Strong mirza melon wine portion",
+	"incontainer-item-bdcstrongwineportion-mirzamelon": "Strong mirza melon wine",
+	"item-bdcpotentwineportion-mirzamelon": "Fine mirza melon wine portion",
+	"incontainer-item-bdcpotentwineportion-mirzamelon": "Fine mirza melon wine",
+	"item-bdcstrongspiritportion-mirzamelon": "Aged mirza melon brandy portion",
+	"incontainer-item-bdcstrongspiritportion-mirzamelon": "Aged mirza melon brandy",
+	"item-bdcpotentspiritportion-mirzamelon": "Vintage mirza melon brandy portion",
+	"incontainer-item-bdcpotentspiritportion-mirzamelon": "Vintage mirza melon brandy",
+	
+	"item-bdcstrongwineportion-watermelon": "Strong watermelon wine portion",
+	"incontainer-item-bdcstrongwineportion-watermelon": "Strong watermelon wine",
+	"item-bdcpotentwineportion-watermelon": "Fine watermelon wine portion",
+	"incontainer-item-bdcpotentwineportion-watermelon": "Fine watermelon wine",
+	"item-bdcstrongspiritportion-watermelon": "Aged watermelon brandy portion",
+	"incontainer-item-bdcstrongspiritportion-watermelon": "Aged watermelon brandy",
+	"item-bdcpotentspiritportion-watermelon": "Vintage watermelon brandy portion",
+	"incontainer-item-bdcpotentspiritportion-watermelon": "Vintage watermelon brandy",
+
+	"item-bdcstrongwineportion-potato": "Strong potato alcohol mash portion",
+	"incontainer-item-bdcstrongwineportion-potato": "Strong potato alcohol mash",
+	"item-bdcpotentwineportion-potato": "Fine potato alcohol mash portion",
+	"incontainer-item-bdcpotentwineportion-potato": "Fine potato alcohol mash",
+	"item-bdcstrongspiritportion-potato": "Aged potato vodka portion",
+	"incontainer-item-bdcstrongspiritportion-potato": "Aged potato vodka",
+	"item-bdcpotentspiritportion-potato": "Vintage potato vodka portion",
+	"incontainer-item-bdcpotentspiritportion-potato": "Vintage potato vodka",	
+	
 }
