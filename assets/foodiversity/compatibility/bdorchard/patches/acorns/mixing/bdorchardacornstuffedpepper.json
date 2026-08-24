@@ -1,0 +1,66 @@
+[
+    {
+        "file": "expandedfoods:itemtypes/food/acorns/mixing/acornstuffedpepper",
+        "path": "/attributes/expandedNutritionProps",
+        "op": "addmerge",
+        "value": {
+            "foodiversity:bdorchardfruitsyrupportion-*" : { "saturation": 12, "health": 0.1, "foodcategory": "Fruit" },
+    		"foodiversity:bdorchardfoodoilportion-*" : { "saturation": 6.4, "health": 0.1, "foodcategory": "Vegetable" },
+        }
+    },
+    {
+        "file": "expandedfoods:itemtypes/food/acorns/mixing/acornstuffedpepper",
+        "path": "/attributes/renderIngredientsByType",
+        "op": "addmerge",
+        "value": {
+			"*-raw": {
+				"foodiversity:bdorcharddryfruit-*": { "shape": "expandedfoods:shapes/item/food/stuffedbellpepper/fruit.json", "name": "fruit", "textureMap": { "fruit": "{fruit}" } }
+			},
+			"*": {
+				"foodiversity:bdorcharddryfruit-*": { "shape": "expandedfoods:shapes/item/food/stuffedbellpepper/fruit.json", "name": "fruit", "textureMap": { "fruit": "{fruit}" } }
+			}
+        }
+    },
+
+    // TODO more than this? investigate how groups work
+    {
+        "file": "expandedfoods:itemtypes/food/acorns/mixing/acornstuffedpepper",
+        "path": "/texturesByType",
+        "op": "addmerge",
+        "value": {
+            "*-bare-*": {
+                "fill-apricot" : {"base": "bdorchard:block/food/pie/fill-apricot" },
+                "fill-avocado" : {"base": "bdorchard:block/food/pie/fill-avocado" },
+                "fill-engkala" : {"base": "bdorchard:block/food/pie/fill-engkala" },
+                "fill-fig" : {"base": "bdorchard:block/food/pie/fill-fig" },
+                "fill-grapefruit" : {"base": "bdorchard:block/food/pie/fill-grapefruit" },
+                "fill-lemon" : {"base": "bdorchard:block/food/pie/fill-lemon" },
+                "fill-lime" : {"base": "bdorchard:block/food/pie/fill-lime" },
+                "fill-nectarine" : {"base": "bdorchard:block/food/pie/fill-nectarine" },
+                "fill-sandpear" : {"base": "bdorchard:block/food/pie/fill-sandpear" }
+            },
+            "@*-(syruppartbaked|syrupcooked|syrupcharred)": {
+                "fill-apricot" : {"base": "bdorchard:block/food/pie/fill-apricot" },
+                "fill-avocado" : {"base": "bdorchard:block/food/pie/fill-avocado" },
+                "fill-engkala" : {"base": "bdorchard:block/food/pie/fill-engkala" },
+                "fill-fig" : {"base": "bdorchard:block/food/pie/fill-fig" },
+                "fill-grapefruit" : {"base": "bdorchard:block/food/pie/fill-grapefruit" },
+                "fill-lemon" : {"base": "bdorchard:block/food/pie/fill-lemon" },
+                "fill-lime" : {"base": "bdorchard:block/food/pie/fill-lime" },
+                "fill-nectarine" : {"base": "bdorchard:block/food/pie/fill-nectarine" },
+                "fill-sandpear" : {"base": "bdorchard:block/food/pie/fill-sandpear" }
+            },
+            "*": {
+                "fill-apricot" : {"base": "bdorchard:block/food/pie/fill-apricot" },
+                "fill-avocado" : {"base": "bdorchard:block/food/pie/fill-avocado" },
+                "fill-engkala" : {"base": "bdorchard:block/food/pie/fill-engkala" },
+                "fill-fig" : {"base": "bdorchard:block/food/pie/fill-fig" },
+                "fill-grapefruit" : {"base": "bdorchard:block/food/pie/fill-grapefruit" },
+                "fill-lemon" : {"base": "bdorchard:block/food/pie/fill-lemon" },
+                "fill-lime" : {"base": "bdorchard:block/food/pie/fill-lime" },
+                "fill-nectarine" : {"base": "bdorchard:block/food/pie/fill-nectarine" },
+                "fill-sandpear" : {"base": "bdorchard:block/food/pie/fill-sandpear" }
+            }
+        }
+    }
+]

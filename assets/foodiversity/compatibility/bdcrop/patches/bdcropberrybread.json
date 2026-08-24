@@ -1,0 +1,54 @@
+[
+    {
+        "file": "expandedfoods:itemtypes/food/mixing/berrybread",
+        "path": "/attributes/expandedNutritionProps",
+        "op": "addmerge",
+        "value": {
+      		"foodiversity:bdcropfruitsyrupportion-*" : { "saturation": 12, "health": 0.1, "foodcategory": "Fruit" },
+      		"foodiversity:bdcropsyrupportion-*" : { "saturation": 12, "health": 0.1, "foodcategory": "Fruit" }
+		}
+    },
+    {
+        "file": "expandedfoods:itemtypes/food/mixing/berrybread",
+        "path": "/attributes/renderIngredientsByType",
+        "op": "addmerge",
+        "value": {
+            "*-dough": {
+				"bdcrop:fruit-*": { "shape": "expandedfoods:shapes/item/food/bread/overlays/fruit/bread.json", "name": "type", "textureMap": { "fruit": "{type}" } },
+				"foodiversity:bdcropdryfruit-*" : { "shape": "expandedfoods:shapes/item/food/bread/overlays/fruit/bread.json", "name": "type", "textureMap": { "fruit": "{type}" } },
+				"foodiversity:bdcropcandiedfruit-*" : { "shape": "expandedfoods:shapes/item/food/bread/overlays/fruit/bread.json", "name": "type", "textureMap": { "fruit": "{type}" } }
+            },
+			"@*-(syruppartbaked|partbaked)": {
+				"bdcrop:fruit-*": { "shape": "expandedfoods:shapes/item/food/bread/overlays/fruit/bread.json", "name": "type", "textureMap": { "fruit": "{type}" } },
+				"foodiversity:bdcropdryfruit-*" : { "shape": "expandedfoods:shapes/item/food/bread/overlays/fruit/bread.json", "name": "type", "textureMap": { "fruit": "{type}" } },
+				"foodiversity:bdcropcandiedfruit-*" : { "shape": "expandedfoods:shapes/item/food/bread/overlays/fruit/bread.json", "name": "type", "textureMap": { "fruit": "{type}" } }
+            },
+			"@*-(syrup|cooked)": {
+				"bdcrop:fruit-*": { "shape": "expandedfoods:shapes/item/food/bread/overlays/fruit/bread.json", "name": "type", "textureMap": { "fruit": "{type}" } },
+				"foodiversity:bdcropdryfruit-*" : { "shape": "expandedfoods:shapes/item/food/bread/overlays/fruit/bread.json", "name": "type", "textureMap": { "fruit": "{type}" } },
+				"foodiversity:bdcropcandiedfruit-*" : { "shape": "expandedfoods:shapes/item/food/bread/overlays/fruit/bread.json", "name": "type", "textureMap": { "fruit": "{type}" } }
+            },
+			"@*-(syrupcharred|charred)": {
+				"bdcrop:fruit-*": { "shape": "expandedfoods:shapes/item/food/bread/overlays/fruit/bread.json", "name": "type", "textureMap": { "fruit": "{type}" } },
+				"foodiversity:bdcropdryfruit-*" : { "shape": "expandedfoods:shapes/item/food/bread/overlays/fruit/bread.json", "name": "type", "textureMap": { "fruit": "{type}" } },
+				"foodiversity:bdcropcandiedfruit-*" : { "shape": "expandedfoods:shapes/item/food/bread/overlays/fruit/bread.json", "name": "type", "textureMap": { "fruit": "{type}" } }
+            }
+        }
+    },
+     {
+        "file": "expandedfoods:itemtypes/food/mixing/berrybread",
+        "path": "/textures",
+        "op": "addmerge",
+        "value": {
+            "cantaloupe" : {"base": "foodiversity:item/food/grain/overlays/cantaloupe" },
+            "honeydewmelon" : {"base": "foodiversity:item/food/grain/overlays/honeydewmelon" },
+            "mirzamelon" : {"base": "foodiversity:item/food/grain/overlays/mirzamelon" },
+            "watermelon" : {"base": "foodiversity:item/food/grain/overlays/watermelon" },
+
+            "fill-cantaloupe" : {"base": "bdcrop:block/food/pie/fill-cantaloupe" },
+            "fill-honeydewmelon" : {"base": "bdcrop:block/food/pie/fill-honeydewmelon" },
+            "fill-mirzamelon" : {"base": "bdcrop:block/food/pie/fill-mirzamelon" },
+            "fill-watermelon" : {"base": "bdcrop:block/food/pie/fill-watermelon" }
+        }
+    }
+]

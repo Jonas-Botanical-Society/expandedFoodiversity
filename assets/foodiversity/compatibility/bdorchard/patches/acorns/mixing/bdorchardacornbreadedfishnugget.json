@@ -1,0 +1,11 @@
+[
+    {
+        "file": "expandedfoods:itemtypes/food/acorns/mixing/acornbreadedfishnugget",
+        "path": "/attributes/expandedNutritionProps",
+        "op": "addmerge",
+        "value": {
+      		"foodiversity:bdcropfruitsyrupportion-*" : { "saturation": 12, "health": 0.1, "foodcategory": "Fruit" },
+    		"bdorchard:foodoilportion-*" : { "saturation": 6.4, "health": 0.1, "foodcategory": "Vegetable" }
+		}
+    }
+]

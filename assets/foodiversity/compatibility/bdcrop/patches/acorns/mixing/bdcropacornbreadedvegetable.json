@@ -1,0 +1,10 @@
+[
+    {
+        "file": "expandedfoods:itemtypes/food/acorns/mixing/acornbreadedvegetable",
+        "path": "/attributes/expandedNutritionProps",
+        "op": "addmerge",
+        "value": {
+      		"foodiversity:bdcropfruitsyrupportion-*" : { "saturation": 12, "health": 0.1, "foodcategory": "Fruit" },
+		}
+    }
+]

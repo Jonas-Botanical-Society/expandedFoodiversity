@@ -1,0 +1,17 @@
+[
+    {
+        // if bdcrop is installed, it will already do this
+        "dependsOn": [{"modid": "bdcrop", "invert": true}],
+        "file": "expandedfoods:itemtypes/food/dryfruit",
+        "frompath": "/attributes/bakingPropertiesByType/*",
+        "op": "move",
+        "path": "/tmp"
+    },
+    {
+        "dependsOn": [{"modid": "bdcrop", "invert": true}],
+        "file": "expandedfoods:itemtypes/food/dryfruit",
+        "frompath": "/tmp",
+        "op": "move",
+        "path": "/attributes/bakingPropertiesByType/dryfuit-*"
+    }
+]

@@ -1,0 +1,29 @@
+[
+    {
+        "file": "expandedfoods:itemtypes/food/mixing/pemmican",
+        "path": "/attributes/expandedNutritionPropsByType",
+        "op": "addmerge",
+        "value": {
+      		"*-raw": {
+                "bdorchard:fruit-engkala" : { "saturation": 45, "foodcategory": "Fruit" },
+                "bdorchard:fruit-lemon" : { "saturation": 45, "foodcategory": "Fruit" },
+                "bdorchard:fruit-lime" : { "saturation": 45, "foodcategory": "Fruit" },
+                "bdorchard:fruit-*" : { "saturation": 60, "foodcategory": "Fruit" },
+
+                "foodversity:bdorcharddryfruit-engkala" : { "saturation": 40, "foodcategory": "Fruit" },
+                "foodversity:bdorcharddryfruit-lemon" : { "saturation": 40, "foodcategory": "Fruit" },
+                "foodversity:bdorcharddryfruit-lime" : { "saturation": 40, "foodcategory": "Fruit" },
+                "foodversity:bdorcharddryfruit-*" : { "saturation": 55, "foodcategory": "Fruit" },
+
+				"foodversity:bdorchardfruitleather-sliced" : { "saturation": 20, "foodcategory": "Fruit" },
+
+				"bdorchard:pressedmash-engkala" : { "saturation": 8, "foodcategory": "Fruit" },
+				"bdorchard:pressedmash-lemon" : { "saturation": 8, "foodcategory": "Fruit" },
+				"bdorchard:pressedmash-lime" : { "saturation": 8, "foodcategory": "Fruit" },
+				"bdorchard:pressedmash-*" : { "saturation": 17, "foodcategory": "Fruit" },
+				
+				"foodiversity:bdorchardfruitsyrupportion-*" : { "saturation": 6, "health": 0.1, "foodcategory": "Fruit" }
+			}
+        }
+    }
+]

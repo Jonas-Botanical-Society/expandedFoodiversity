@@ -1,0 +1,36 @@
+[
+    {
+        "file": "expandedfoods:itemtypes/food/mixing/gozinaki",
+        "path": "/attributes/expandedNutritionProps",
+        "op": "addmerge",
+        "value": {
+      		"foodiversity:bdorchardfruitsyrupportion-*" : { "saturation": 12, "health": 0.1, "foodcategory": "Fruit" },
+        }
+    },
+    {
+        "file": "expandedfoods:itemtypes/food/mixing/gozinaki",
+        "path": "/attributes/renderIngredientsByType",
+        "op": "addmerge",
+        "value": {
+			"*-syrup": {
+				"foodiversity:bdorchardfruitsyrupportion-*": { "shape": "foodiversity:shapes/item/food/gozinaki/syrup.json", "name": "type", "textureMap": { "syrup": "{type}" } }
+			}
+        }
+    },
+    {
+        "file": "expandedfoods:itemtypes/food/mixing/gozinaki",
+        "path": "/textures",
+        "op": "addmerge",
+        "value": {
+            "apricot" : {"base": "bdorchard:block/food/pie/fill-apricot" },
+            "avocado" : {"base": "bdorchard:block/food/pie/fill-avocado" },
+            "engkala" : {"base": "bdorchard:block/food/pie/fill-engkala" },
+            "fig" : {"base": "bdorchard:block/food/pie/fill-fig" },
+            "grapefruit" : {"base": "bdorchard:block/food/pie/fill-grapefruit" },
+            "lemon" : {"base": "bdorchard:block/food/pie/fill-lemon" },
+            "lime" : {"base": "bdorchard:block/food/pie/fill-lime" },
+            "nectarine" : {"base": "bdorchard:block/food/pie/fill-nectarine" },
+            "sandpear" : {"base": "bdorchard:block/food/pie/fill-sandpear" }
+        }
+    }
+]

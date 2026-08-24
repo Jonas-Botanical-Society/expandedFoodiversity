@@ -1,0 +1,60 @@
+[
+    {
+        "file": "expandedfoods:itemtypes/food/fruitleather",
+        "path": "/attributes/expandedNutritionProps",
+        "op": "addmerge",
+        "value": {
+            "bdorchard:pressedmash-engkala" : { "saturation": 10, "foodcategory": "Fruit" },
+            "bdorchard:pressedmash-lime" : { "saturation": 10, "foodcategory": "Fruit" },
+            "bdorchard:pressedmash-lemon" : { "saturation": 10, "foodcategory": "Fruit" },
+            "bdorchard:pressedmash-*" : { "saturation": 135, "foodcategory": "Fruit" },
+            "foodiversity:fruitsyrupportion-*" : { "saturation": 12, "health": 0.1, "foodcategory": "Fruit" },
+        }
+    },
+    {
+        "file": "expandedfoods:itemtypes/food/fruitleather",
+        "path": "/attributes/renderIngredientsByType",
+        "op": "addmerge",
+        "value": {
+            "*-wet": {
+               "bdorchard:pressedmash-*": { "shape": "foodiversity:shapes/item/food/fruitleather/wet.json", "name": "type", "textureMap": { "fruit": "{type}", "juice": "{type}juice" } }
+            },
+            "*-dried": {
+                "bdorchard:pressedmash-*": { "shape": "expandedfoods:shapes/item/food/fruitleather/dried.json", "name": "type", "textureMap": { "fruit": "{type}" } }
+            },
+            "*-sliced": {
+                "bdorchard:pressedmash-*": { "shape": "expandedfoods:shapes/item/food/fruitleather/sliced.json", "name": "type", "textureMap": { "fruit": "{type}" } }
+            }
+        }
+    },
+    {
+        "enabled": false,
+        "file": "expandedfoods:itemtypes/food/fruitleather",
+        "path": "/textures",
+        "op": "addmerge",
+        "value": {
+            "*-wet": {
+                "apricot" : {"base": "foodiversity:item/food/fruitleather/apricot" },
+                "avocado" : {"base": "foodiversity:item/food/fruitleather/avocado" },
+                "engkala" : {"base": "foodiversity:item/food/fruitleather/engkala" },
+                "fig" : {"base": "foodiversity:item/food/fruitleather/fig" },
+                "grapefruit" : {"base": "foodiversity:item/food/fruitleather/grapefruit" },
+                "lemon" : {"base": "foodiversity:item/food/fruitleather/lemon" },
+                "lime" : {"base": "foodiversity:item/food/fruitleather/lime" },
+                "nectarine" : {"base": "foodiversity:item/food/fruitleather/nectarine" },
+                "sandpear" : {"base": "foodiversity:item/food/fruitleather/sandpear" }
+            },
+            "@*-(dried|sliced)": {
+                "apricot" : {"base": "foodiversity:item/food/fruitleather/apricot", "overlays": ["game:item/fruitleather"] },
+                "avocado" : {"base": "foodiversity:item/food/fruitleather/avocado", "overlays": ["game:item/fruitleather"] },
+                "engkala" : {"base": "foodiversity:item/food/fruitleather/engkala", "overlays": ["game:item/fruitleather"] },
+                "fig" : {"base": "foodiversity:item/food/fruitleather/fig", "overlays": ["game:item/fruitleather"] },
+                "grapefruit" : {"base": "foodiversity:item/food/fruitleather/grapefruit", "overlays": ["game:item/fruitleather"] },
+                "lemon" : {"base": "foodiversity:item/food/fruitleather/lemon", "overlays": ["game:item/fruitleather"] },
+                "lime" : {"base": "foodiversity:item/food/fruitleather/lime", "overlays": ["game:item/fruitleather"] },
+                "nectarine" : {"base": "foodiversity:item/food/fruitleather/nectarine", "overlays": ["game:item/fruitleather"] },
+                "sandpear" : {"base": "foodiversity:item/food/fruitleather/sandpear", "overlays": ["game:item/fruitleather"] }
+            }
+        }
+    }
+]

@@ -1,0 +1,50 @@
+[
+    {
+        "file": "expandedfoods:itemtypes/food/mixing/stuffedpepper",
+        "path": "/attributes/expandedNutritionProps",
+        "op": "addmerge",
+        "value": {
+            "foodiversity:bdcropfruitsyrupportion-*" : { "saturation": 12, "health": 0.1, "foodcategory": "Fruit" }
+        }
+    },
+    {
+        "file": "expandedfoods:itemtypes/food/mixing/stuffedpepper",
+        "path": "/attributes/renderIngredientsByType",
+        "op": "addmerge",
+        "value": {
+			"*-raw": {
+				"foodiversity:bdcropdryfruit-*": { "shape": "expandedfoods:shapes/item/food/stuffedbellpepper/fruit.json", "name": "fruit", "textureMap": { "fruit": "{fruit}" } }
+			},
+			"*": {
+				"foodiversity:bdcropdryfruit-*": { "shape": "expandedfoods:shapes/item/food/stuffedbellpepper/fruit.json", "name": "fruit", "textureMap": { "fruit": "{fruit}" } }
+			}
+        }
+    },
+
+    // TODO more than this? investigate how groups work
+    {
+        "file": "expandedfoods:itemtypes/food/mixing/stuffedpepper",
+        "path": "/texturesByType",
+        "op": "addmerge",
+        "value": {
+            "*-bare-*": {
+                "fill-cantaloupe" : {"base": "bdcrop:block/food/pie/fill-cantaloupe" },
+                "fill-honeydewmelon" : {"base": "bdcrop:block/food/pie/fill-honeydewmelon" },
+                "fill-mirzamelon" : {"base": "bdcrop:block/food/pie/fill-mirzamelon" },
+                "fill-watermelon" : {"base": "bdcrop:block/food/pie/fill-watermelon" }
+            },
+            "@*-(syruppartbaked|syrupcooked|syrupcharred)": {
+                "fill-cantaloupe" : {"base": "bdcrop:block/food/pie/fill-cantaloupe" },
+                "fill-honeydewmelon" : {"base": "bdcrop:block/food/pie/fill-honeydewmelon" },
+                "fill-mirzamelon" : {"base": "bdcrop:block/food/pie/fill-mirzamelon" },
+                "fill-watermelon" : {"base": "bdcrop:block/food/pie/fill-watermelon" }
+            },
+            "*": {
+                "fill-cantaloupe" : {"base": "bdcrop:block/food/pie/fill-cantaloupe" },
+                "fill-honeydewmelon" : {"base": "bdcrop:block/food/pie/fill-honeydewmelon" },
+                "fill-mirzamelon" : {"base": "bdcrop:block/food/pie/fill-mirzamelon" },
+                "fill-watermelon" : {"base": "bdcrop:block/food/pie/fill-watermelon" }
+            }
+        }
+    }
+]

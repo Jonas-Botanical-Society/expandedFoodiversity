@@ -1,0 +1,12 @@
+{
+    "inheritFrom": "expandedfoods:itemtypes/food/candiedfruit",
+    "code": "bdcropcandiedfruit",
+    "variantgroups": [
+		{ "code": "fruit",  "states": ["cantaloupe", "honeydewmelon", "mirzamelon", "watermelon"] }
+	],
+    "nutritionPropsByType": {
+		"bdcropcandiedfruit-*": { "satiety": 200, "health": 1, "foodcategory": "Fruit" }
+	},
+    "heldRightReadyAnimation": "holdbothhands",
+    "heldTpIdleAnimation": "holdbothhands"
+}

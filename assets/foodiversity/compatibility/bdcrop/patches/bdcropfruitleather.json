@@ -1,0 +1,47 @@
+[
+    {
+        "file": "expandedfoods:itemtypes/food/fruitleather",
+        "path": "/attributes/expandedNutritionProps",
+        "op": "addmerge",
+        "value": {
+            "bdcrop:pressedmash-*": { "saturation": 180, "foodcategory": "Fruit" },
+            "foodiversity:bdcropfruitsyrupportion-*" : { "saturation": 12, "health": 0.1, "foodcategory": "Fruit" },
+        }
+    },
+    {
+        "file": "expandedfoods:itemtypes/food/fruitleather",
+        "path": "/attributes/renderIngredientsByType",
+        "op": "addmerge",
+        "value": {
+            "*-wet": {
+                "bdcrop:pressedmash-*": { "shape": "foodiversity:shapes/item/food/fruitleather/wet.json", "name": "type", "textureMap": { "fruit": "{type}", "juice": "{type}juice" } }
+            },
+            "*-dried": {
+                "bdcrop:pressedmash-*": { "shape": "expandedfoods:shapes/item/food/fruitleather/dried.json", "name": "type", "textureMap": { "fruit": "{type}" } }
+            },
+            "*-sliced": {
+                "bdcrop:pressedmash-*": { "shape": "expandedfoods:shapes/item/food/fruitleather/sliced.json", "name": "type", "textureMap": { "fruit": "{type}" } }
+            }
+        }
+    },
+    {
+        "enabled": false,
+        "file": "expandedfoods:itemtypes/food/fruitleather",
+        "path": "/textures",
+        "op": "addmerge",
+        "value": {
+            "*-wet": {
+                "cantaloupe" : {"base": "foodiversity:item/food/fruitleather/cantaloupe" },
+                "honeydewmelon" : {"base": "foodiversity:item/food/fruitleather/honeydewmelon" },
+                "mirzamelon" : {"base": "foodiversity:item/food/fruitleather/mirzamelon" },
+                "watermelon" : {"base": "foodiversity:item/food/fruitleather/watermelon" }
+            },
+            "@*-(dried|sliced)": {
+                "cantaloupe" : {"base": "foodiversity:item/food/fruitleather/cantaloupe", "overlays": ["game:item/fruitleather"] },
+                "honeydewmelon" : {"base": "foodiversity:item/food/fruitleather/honeydewmelon", "overlays": ["game:item/fruitleather"] },
+                "mirzamelon" : {"base": "foodiversity:item/food/fruitleather/mirzamelon", "overlays": ["game:item/fruitleather"] },
+                "watermelon" : {"base": "foodiversity:item/food/fruitleather/watermelon", "overlays": ["game:item/fruitleather"] }
+            }
+        }
+    }
+]

@@ -1,0 +1,38 @@
+[
+    {
+        "file": "expandedfoods:itemtypes/food/mixing/fruitbar",
+        "path": "/attributes/expandedNutritionPropsByType/*",
+        "op": "addmerge",
+        "value": {
+            "foodiversity:bdorchardfruitsyrupportion-*" : { "saturation": 12, "health": 0.1, "foodcategory": "Fruit" },
+        }
+    },
+    {
+        "file": "expandedfoods:itemtypes/food/mixing/fruitbar",
+        "path": "/attributes/renderIngredients",
+        "op": "addmerge",
+        "value": {
+			"bdorchard:fruit-*": { "shape": "expandedfoods:shapes/item/food/fruitbar/overlay.json", "name": "overlay", "textureMap": { "overlay": "{overlay}O" } },
+			"foodiversity:bdorcharddryfruit-*": { "shape": "expandedfoods:shapes/item/food/fruitbar/overlay.json", "name": "overlay", "textureMap": { "overlay": "{overlay}O" } },
+			"foodiversity:bdorchardcandiedfruit-*": { "shape": "expandedfoods:shapes/item/food/fruitbar/overlay.json", "name": "overlay", "textureMap": { "overlay": "{overlay}O" } },
+			"foodiversity:bdorchardgelatin-*": { "shape": "expandedfoods:shapes/item/food/fruitbar/filling.json", "name": "filling", "textureMap": { "filling": "{filling}F" } },
+			"foodiversity:bdorchardyogurt-*": { "shape": "expandedfoods:shapes/item/food/fruitbar/filling.json", "name": "filling", "textureMap": { "filling": "{filling}F" } }
+        }
+    },
+    {
+        "file": "expandedfoods:itemtypes/food/mixing/fruitbar",
+        "path": "/textures",
+        "op": "addmerge",
+        "value": {
+            "apricot0" : {"base": "foodiversity:item/food/grain/overlays/apricot" },
+            "avocado0" : {"base": "foodiversity:item/food/grain/overlays/avocado" },
+            "engkala0" : {"base": "foodiversity:item/food/grain/overlays/engkala" },
+            "fig0" : {"base": "foodiversity:item/food/grain/overlays/fig" },
+            "grapefruit0" : {"base": "foodiversity:item/food/grain/overlays/grapefruit" },
+            "lemon0" : {"base": "foodiversity:item/food/grain/overlays/lemon" },
+            "lime0" : {"base": "foodiversity:item/food/grain/overlays/lime" },
+            "nectarine0" : {"base": "foodiversity:item/food/grain/overlays/nectarine" },
+            "sandpear0" : {"base": "foodiversity:item/food/grain/overlays/sandpear" }
+        }
+    }
+]

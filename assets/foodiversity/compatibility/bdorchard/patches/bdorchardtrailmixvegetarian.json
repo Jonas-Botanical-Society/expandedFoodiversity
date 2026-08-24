@@ -1,0 +1,10 @@
+[
+    {
+        "file": "expandedfoods:itemtypes/food/mixing/trailmixvegetarian",
+        "path": "/attributes/expandedNutritionProps",
+        "op": "addmerge",
+        "value": {
+          "foodiversity:bdorchardfruitleather-sliced" : { "saturation": 30, "foodcategory": "Fruit" },
+        }
+    }
+]
