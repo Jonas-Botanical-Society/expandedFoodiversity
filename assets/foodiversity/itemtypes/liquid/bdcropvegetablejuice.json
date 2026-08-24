@@ -1,0 +1,18 @@
+{
+	"inheritFrom": "expandedfoods:itemtypes/liquid/vegetablejuice.json",
+	"code": "bdcropvegetablejuiceportion",
+	"variantgroups": [
+		{ "code": "type", "states": ["leek", "tomato", "naplessquash", "butternutsquash", "broccoli", "brusselsprouts", "cucumber", "eggplant", "potato"] }
+	],
+	"attributes": {
+		"waterTightContainerProps": {
+			"whenSpilled": {
+				"action": "DropContents",
+				"stack": { "type": "item", "code": "foodiversity:bdcropvegetablejuiceportion-{type}" }
+			},
+			"textureByType": { "bdcropvegetablejuiceportion-*": {"base": "foodiversity:item/liquid/{type}"} }
+		}
+	},
+	"textureByType": { "bdcropvegetablejuiceportion-*": {"base": "foodiversity:item/liquid/{type}"} },
+	"creativeinventoryStacks": [ { "tabs": ["general", "liquids", "expandedfoods"], "stacks": [ { "type": "block", "code": "game:woodbucket", "attributes": { "ucontents": [ { "type":"item", "code": "foodiversity:bdcropvegetablejuiceportion-{type}", "makefull": true } ] } } ] } ]
+}

@@ -1,0 +1,64 @@
+{
+	"inheritFrom": "expandedfoods:itemtypes/liquid/strongwine.json",
+	"code": "bdcropstrongwineportion",
+	"variantgroups": [
+		{
+			"code": "fruit",
+			"loadFromProperties": "bdcrop:item/food/fruit",
+			"states": ["potato"]
+		}
+	],
+	"attributes": {
+		"waterTightContainerProps": {
+			"texturebytype": {
+				"bdcropstrongwineportion-*": { "base": "bdcrop:block/food/pie/fill-{fruit}", "alpha": 160, "overlays": ["game:item/liquid/syrup"] }
+			},
+			"whenSpilled": {
+				"action": "DropContents",
+				"stack": { "type": "item", "code": "foodiversity:bdcropstrongwineportion-{fruit}" }
+			},
+			"nutritionPropsPerLitre": {
+				"satiety": 90,
+				"intoxication": 0.3,
+				"health": 0.5,
+				"foodcategoryByType": {
+					"bdcropstrongwineportion-potato": "Vegetable",
+					"bdcropstrongwineportion-*": "Fruit"
+				}
+			}
+		},
+		"distillationPropsbytype": {
+			"bdcropstrongwineportion-potato": {
+			"distilledStack": { "type": "item", "code": "bdcrop:spiritportion-potato" }, 
+			"ratio": 0.1 
+			},
+			"bdcropstrongwineportion-*": {
+			"distilledStack": { "type": "item", "code": "bdcrop:spiritportion-{fruit}" },
+			"ratio": 0.2
+			}
+		}		
+	},
+	"transitionableProps": [{
+    		"type": "Perish",
+    		"freshHours": { "avg": 6720 },
+    		"transitionHours": { "avg": 288 },
+    		"transitionedStack": { "type": "item", "code": "game:vinegarportion" },
+    		"transitionRatio": 1
+  	},
+	{
+    		"type": "Cure",
+    		"freshHours": { "avg": 6720 },
+    		"transitionHours": { "avg": 2016 },
+    		"transitionedStack": { "type": "item", "code": "foodiversity:bdcroppotentwineportion-{fruit}" },
+    		"transitionRatio": 1
+  	}],
+	"shape": { "base": "game:item/liquid" },
+	"texturebytype": {
+		"strongwineportion-*": { "base": "game:block/food/pie/fill-{fruit}", "alpha": 160, "overlays": ["game:item/liquid/syrup"] }
+	},
+	"creativeinventoryStacks": [ { "tabs": ["general", "liquids", "expandedfoods"], "stacks": [ { "type": "block", "code": "game:woodbucket", "attributes": { "ucontents": [ { "type":"item", "code": "foodiversity:bdcropstrongwineportion-{fruit}", "makefull": true } ] } } ] } ],
+	"nutritionPropsByType": { 
+		"bdcropstrongwineportion-potato": {"satiety": 0.9, "health": 0.005, "foodcategory": "Vegetable", "intoxication":  0.03 },
+		"bdcropstrongwineportion-*": {"saturation": 0.9, "health": 0.005, "foodcategory": "Fruit", "intoxication":  0.03 }
+	}
+}

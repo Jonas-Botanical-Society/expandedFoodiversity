@@ -1,0 +1,31 @@
+{
+	"inheritFrom": "expandedfoods:itemtypes/liquid/yogurt.json",
+	"code": "bdcropyogurt",
+	"attributes": {
+		"waterTightContainerProps": {
+			"whenSpilled": { 
+				"action": "DropContents",
+				"stack": { "type": "item", "code": "bdcropyogurt-{type}" } 
+			},
+			"texture": { "base": "foodiversity:item/liquid/yogurt/{type}" },
+			"nutritionPropsPerLitreByType": {
+				"@*-(cantaloupe|honeydewmelon|mirzamelon|watermelon)":
+				{ "saturation": 300, "health": 10, "foodcategory": "Dairy" }
+			}
+		},
+		"expandedNutritionPropsByType": {
+			"@*-(cantaloupe|honeydewmelon|mirzamelon|watermelon)": {
+				"expandedfoods:yogurt-starter": { "saturation": 3, "Health": 0.1, "foodcategory": "Dairy" },
+				"expandedfoods:yogurt-ferment": { "saturation": 3, "Health": 0.1, "foodcategory": "Dairy" },
+				"expandedfoods:yogurt-plain": { "saturation": 3, "Health": 0.1, "foodcategory": "Dairy" },
+				"expandedfoods:pasteurizedmilkportion": { "saturation": 0, "health": 0.0, "foodcategory": "Dairy" },
+				"foodiversity:fruitsyrupportion-*": { "saturation": 12, "health": 0.1, "foodcategory": "Fruit" }
+			}
+		}
+	},
+	"variantgroups": [
+		{ "code": "type", "loadFromProperties": "bdcrop:item/food/fruit" }
+	],
+	"creativeinventoryStacks": [ { "tabs": ["general", "liquids", "expandedfoods"], "stacks": [ { "type": "block", "code": "game:woodbucket", "attributes": { "ucontents": [ { "type":"item", "code": "foodiversity:bdcropyogurt-{type}", "makefull": true } ] } } ] } ],
+	"texture": { "base": "foodiversity:item/liquid/yogurt/{type}" }
+}
