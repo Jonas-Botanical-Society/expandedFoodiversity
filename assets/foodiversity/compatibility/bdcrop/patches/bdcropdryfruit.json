@@ -1,0 +1,14 @@
+[
+    {
+        "file": "expandedfoods:itemtypes/food/dryfruit",
+        "frompath": "/attributes/bakingPropertiesByType/*",
+        "op": "move",
+        "path": "/tmp"
+    },
+    {
+        "file": "expandedfoods:itemtypes/food/dryfruit",
+        "frompath": "/tmp",
+        "op": "move",
+        "path": "/attributes/bakingPropertiesByType/dryfuit-*"
+    }
+]

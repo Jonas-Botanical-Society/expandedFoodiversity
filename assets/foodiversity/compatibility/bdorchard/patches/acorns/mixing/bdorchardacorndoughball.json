@@ -1,0 +1,12 @@
+[
+    {
+        "file": "expandedfoods:itemtypes/food/acorns/mixing/acornbreadedvegetable",
+        "path": "/attributes/expandedNutritionPropsByType",
+        "op": "addmerge",
+        "value": {
+			"*-dough": {
+                "bdorchard:foodoilportion-*" : { "saturation": 6.4, "health": 0.1, "foodcategory": "Vegetable" }
+            }
+        }
+    }
+]

@@ -1,0 +1,72 @@
+{
+    "inheritFrom": "expandedfoods:itemtypes/food/dryfruit",
+    "code": "bdcropdryfruit",
+    "variantgroups": [
+		{ "code": "fruit",  "states": ["cantaloupe", "honeydewmelon", "mirzamelon", "watermelon"] }
+	],
+    
+	"nutritionPropsByType": {
+		"bdcropdryfruit-*": { "satiety": 100, "foodcategory": "Fruit" }
+	},
+
+    "nutritionPropsWhenInMeal": { 
+        "satietyByType":  {
+            "bdcropdryfruit-*":  120 
+        },
+        "foodcategory": "Fruit" 
+    },
+    
+	"transitionablePropsByType": {
+		"bdcropdryfruit-*": [{
+			"type": "Perish",
+			"freshHours": { "avg": 480 },
+			"transitionHours": { "avg": 12 },
+			"transitionedStack": { "type": "item", "code": "game:rot" },
+			"transitionRatio": 0.25
+		}]
+	},
+    "inPiePropertiesByType": {
+        "bdcropdryfruit-*": { "texture": "bdcrop:block/food/pie/fill-{fruit}", "partType": "Filling" }
+    },
+
+    // TODO see if different transforms are needed for models/animations
+    "guiTransformByType": {
+        "bdcropdryfruit-*": {
+          "translation": { "x": 0, "y": 0, "z": 0 },
+          "rotation": { "x": 138, "y": 0, "z": -1 },
+          "origin": { "x": 0.48, "y": 0.1, "z": 0.5 },
+          "scale": 3.19
+        }
+    },
+    "tpHandTransformByType": {
+        "bdcropdryfruit-*": {
+          "translation": { "x": -2.1, "y": -0.9, "z": -0.6 },
+          "rotation": { "x": 0, "y": 22, "z": -90 },
+          "origin": { "x": 1.4, "y": 0, "z": 0.5 },
+          "scale": 0.7
+        }
+    },
+    "groundTransformByType": {
+      "dryfruit-*": {
+        "translation": { "x": 0, "y": 0, "z": 0 },
+        "rotation": { "x": 2, "y": 0, "z": 0 },
+        "origin": { "x": 0.5, "y": -0, "z": 0.5 },
+        "scale": 4
+      }
+    },
+    "bakingPropertiesByType": {
+        "bdcropdryfruit-*":  {
+            "temp": 100,
+            "levelFrom": 0.5,
+            "levelTo": 1.0,
+            "startScaleY": 0.8,
+            "endScaleY": 0.8,
+            "initialCode": "bdcrop:fruit-{fruit}"
+        }
+    },
+
+    // TODO exclude some from holdbothhands? investigate pattern EF uses
+    "heldRightReadyAnimation": "holdbothhands",
+    "heldTpIdleAnimation": "holdbothhands"
+    
+}

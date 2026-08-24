@@ -1,0 +1,111 @@
+[
+    {
+        "file": "expandedfoods:itemtypes/food/acorns/mixing/acornbreadberry",
+        "path": "/attributes/expandedNutritionProps",
+        "op": "addmerge",
+        "value": {
+      		"foodiversity:bdorchardfruitsyrupportion-*" : { "saturation": 12, "health": 0.1, "foodcategory": "Fruit" },
+		}
+    },
+    {
+        "file": "expandedfoods:itemtypes/food/acorns/mixing/acornbreadberry",
+        "path": "/attributes/renderIngredientsByType",
+        "op": "addmerge",
+        "value": {
+            "*-dough": {
+				"bdorchard:fruit-*": { "shape": "expandedfoods:shapes/item/food/bread/overlays/fruit/bread.json", "name": "type", "textureMap": { "fruit": "{type}" } },
+				"foodiversity:bdorcharddryfruit-*" : { "shape": "expandedfoods:shapes/item/food/bread/overlays/fruit/bread.json", "name": "type", "textureMap": { "fruit": "{type}" } },
+				"foodiversity:bdorchardcandiedfruit-*" : { "shape": "expandedfoods:shapes/item/food/bread/overlays/fruit/bread.json", "name": "type", "textureMap": { "fruit": "{type}" } },
+            },
+			"*": {
+				"bdorchard:fruit-*": { "shape": "expandedfoods:shapes/item/food/bread/overlays/fruit/bread.json", "name": "type", "textureMap": { "fruit": "{type}" } },
+				"foodiversity:bdorcharddryfruit-*" : { "shape": "expandedfoods:shapes/item/food/bread/overlays/fruit/bread.json", "name": "type", "textureMap": { "fruit": "{type}" } },
+				"foodiversity:bdorchardcandiedfruit-*" : { "shape": "expandedfoods:shapes/item/food/bread/overlays/fruit/bread.json", "name": "type", "textureMap": { "fruit": "{type}" } },
+            }
+        }
+    },
+
+
+    {
+        "file": "expandedfoods:itemtypes/food/acorns/mixing/acornbreadberry",
+        "path": "/texturesByType",
+        "op": "addmerge",
+        "value": {
+            "@*-(syrupcharred|charred)": {
+                "apricot" : {"base": "foodiversity:item/food/grain/overlays/apricot" },
+                "avocado" : {"base": "foodiversity:item/food/grain/overlays/avocado" },
+                "engkala" : {"base": "foodiversity:item/food/grain/overlays/engkala" },
+                "fig" : {"base": "foodiversity:item/food/grain/overlays/fig" },
+                "grapefruit" : {"base": "foodiversity:item/food/grain/overlays/grapefruit" },
+                "lemon" : {"base": "foodiversity:item/food/grain/overlays/lemon" },
+                "lime" : {"base": "foodiversity:item/food/grain/overlays/lime" },
+                "nectarine" : {"base": "foodiversity:item/food/grain/overlays/nectarine" },
+                "sandpear" : {"base": "foodiversity:item/food/grain/overlays/sandpear" },
+
+                "fill-apricot" : {"base": "bdorchard:block/food/pie/fill-apricot" },
+                "fill-avocado" : {"base": "bdorchard:block/food/pie/fill-avocado" },
+                "fill-engkala" : {"base": "bdorchard:block/food/pie/fill-engkala" },
+                "fill-fig" : {"base": "bdorchard:block/food/pie/fill-fig" },
+                "fill-grapefruit" : {"base": "bdorchard:block/food/pie/fill-grapefruit" },
+                "fill-lemon" : {"base": "bdorchard:block/food/pie/fill-lemon" },
+                "fill-lime" : {"base": "bdorchard:block/food/pie/fill-lime" },
+                "fill-nectarine" : {"base": "bdorchard:block/food/pie/fill-nectarine" },
+                "fill-sandpear" : {"base": "bdorchard:block/food/pie/fill-sandpear" }
+            },
+            
+            "@*-(syrup|cooked)": {
+                "apricot" : {"base": "foodiversity:item/food/grain/overlays/apricot" },
+                "avocado" : {"base": "foodiversity:item/food/grain/overlays/avocado" },
+                "engkala" : {"base": "foodiversity:item/food/grain/overlays/engkala" },
+                "fig" : {"base": "foodiversity:item/food/grain/overlays/fig" },
+                "grapefruit" : {"base": "foodiversity:item/food/grain/overlays/grapefruit" },
+                "lemon" : {"base": "foodiversity:item/food/grain/overlays/lemon" },
+                "lime" : {"base": "foodiversity:item/food/grain/overlays/lime" },
+                "nectarine" : {"base": "foodiversity:item/food/grain/overlays/nectarine" },
+                "sandpear" : {"base": "foodiversity:item/food/grain/overlays/sandpear" },
+
+                "fill-apricot" : {"base": "bdorchard:block/food/pie/fill-apricot" },
+                "fill-avocado" : {"base": "bdorchard:block/food/pie/fill-avocado" },
+                "fill-engkala" : {"base": "bdorchard:block/food/pie/fill-engkala" },
+                "fill-fig" : {"base": "bdorchard:block/food/pie/fill-fig" },
+                "fill-grapefruit" : {"base": "bdorchard:block/food/pie/fill-grapefruit" },
+                "fill-lemon" : {"base": "bdorchard:block/food/pie/fill-lemon" },
+                "fill-lime" : {"base": "bdorchard:block/food/pie/fill-lime" },
+                "fill-nectarine" : {"base": "bdorchard:block/food/pie/fill-nectarine" },
+                "fill-sandpear" : {"base": "bdorchard:block/food/pie/fill-sandpear" }
+            },
+            "@*-(syruppartbaked|partbaked)": {
+                "apricot" : {"base": "foodiversity:item/food/grain/overlays/apricot" },
+                "avocado" : {"base": "foodiversity:item/food/grain/overlays/avocado" },
+                "engkala" : {"base": "foodiversity:item/food/grain/overlays/engkala" },
+                "fig" : {"base": "foodiversity:item/food/grain/overlays/fig" },
+                "grapefruit" : {"base": "foodiversity:item/food/grain/overlays/grapefruit" },
+                "lemon" : {"base": "foodiversity:item/food/grain/overlays/lemon" },
+                "lime" : {"base": "foodiversity:item/food/grain/overlays/lime" },
+                "nectarine" : {"base": "foodiversity:item/food/grain/overlays/nectarine" },
+                "sandpear" : {"base": "foodiversity:item/food/grain/overlays/sandpear" },
+
+                "fill-apricot" : {"base": "bdorchard:block/food/pie/fill-apricot" },
+                "fill-avocado" : {"base": "bdorchard:block/food/pie/fill-avocado" },
+                "fill-engkala" : {"base": "bdorchard:block/food/pie/fill-engkala" },
+                "fill-fig" : {"base": "bdorchard:block/food/pie/fill-fig" },
+                "fill-grapefruit" : {"base": "bdorchard:block/food/pie/fill-grapefruit" },
+                "fill-lemon" : {"base": "bdorchard:block/food/pie/fill-lemon" },
+                "fill-lime" : {"base": "bdorchard:block/food/pie/fill-lime" },
+                "fill-nectarine" : {"base": "bdorchard:block/food/pie/fill-nectarine" },
+                "fill-sandpear" : {"base": "bdorchard:block/food/pie/fill-sandpear" }
+            },
+            "*": {
+                "apricot" : {"base": "foodiversity:item/food/grain/overlays/apricot" },
+                "avocado" : {"base": "foodiversity:item/food/grain/overlays/avocado" },
+                "engkala" : {"base": "foodiversity:item/food/grain/overlays/engkala" },
+                "fig" : {"base": "foodiversity:item/food/grain/overlays/fig" },
+                "grapefruit" : {"base": "foodiversity:item/food/grain/overlays/grapefruit" },
+                "lemon" : {"base": "foodiversity:item/food/grain/overlays/lemon" },
+                "lime" : {"base": "foodiversity:item/food/grain/overlays/lime" },
+                "nectarine" : {"base": "foodiversity:item/food/grain/overlays/nectarine" },
+                "sandpear" : {"base": "foodiversity:item/food/grain/overlays/sandpear" }
+            }
+        }
+    }
+]

@@ -1,0 +1,20 @@
+[
+    {
+        "file": "expandedfoods:itemtypes/food/primitivesurvival/mixing/pemmicansnake",
+        "path": "/attributes/expandedNutritionPropsByType",
+        "op": "addmerge",
+        "value": {
+      		"*-raw": {
+                "bdcrop:fruit-*" : { "saturation": 60, "foodcategory": "Fruit" },
+
+                "foodversity:bdcropdryfruit-*" : { "saturation": 55, "foodcategory": "Fruit" },
+
+				"foodversity:bdcropfruitleather-sliced" : { "saturation": 20, "foodcategory": "Fruit" },
+
+				"bdcrop:pressedmash-*" : { "saturation": 17, "foodcategory": "Fruit" },
+				
+				"foodiversity:bdcropfruitsyrupportion-*" : { "saturation": 6, "health": 0.1, "foodcategory": "Fruit" }
+			}
+        }
+    }
+]

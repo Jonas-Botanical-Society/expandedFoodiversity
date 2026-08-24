@@ -1,0 +1,13 @@
+{
+    "inheritFrom": "expandedfoods:itemtypes/food/candiedfruit",
+    "code": "bdorchardcandiedfruit",
+    "variantgroups": [
+		{ "code": "fruit",  "loadFromPropertiesCombine": ["bdorchard:block/fruit"] }
+	],
+    "nutritionPropsByType": {
+		"@*-(engkala|lemon|lime)": { "satiety": 180, "health": 1, "foodcategory": "Fruit" },
+		"bdorchardcandiedfruit-*": { "satiety": 200, "health": 1, "foodcategory": "Fruit" }
+	},
+    "heldRightReadyAnimation": "holdbothhands",
+    "heldTpIdleAnimation": "holdbothhands"
+}

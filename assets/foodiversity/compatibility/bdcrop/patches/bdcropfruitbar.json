@@ -1,0 +1,33 @@
+[
+    {
+        "file": "expandedfoods:itemtypes/food/mixing/fruitbar",
+        "path": "/attributes/expandedNutritionPropsByType/*",
+        "op": "addmerge",
+        "value": {
+            "foodiversity:bdcropfruitsyrupportion-*" : { "saturation": 12, "health": 0.1, "foodcategory": "Fruit" },
+        }
+    },
+    {
+        "file": "expandedfoods:itemtypes/food/mixing/fruitbar",
+        "path": "/attributes/renderIngredients",
+        "op": "addmerge",
+        "value": {
+			"bdcrop:fruit-*": { "shape": "expandedfoods:shapes/item/food/fruitbar/overlay.json", "name": "overlay", "textureMap": { "overlay": "{overlay}O" } },
+			"foodiversity:bdcropdryfruit-*": { "shape": "expandedfoods:shapes/item/food/fruitbar/overlay.json", "name": "overlay", "textureMap": { "overlay": "{overlay}O" } },
+			"foodiversity:bdcropcandiedfruit-*": { "shape": "expandedfoods:shapes/item/food/fruitbar/overlay.json", "name": "overlay", "textureMap": { "overlay": "{overlay}O" } },
+			"foodiversity:bdcropgelatin-*": { "shape": "expandedfoods:shapes/item/food/fruitbar/filling.json", "name": "filling", "textureMap": { "filling": "{filling}F" } },
+			"foodiversity:bdcropyogurt-*": { "shape": "expandedfoods:shapes/item/food/fruitbar/filling.json", "name": "filling", "textureMap": { "filling": "{filling}F" } }
+        }
+    },
+    {
+        "file": "expandedfoods:itemtypes/food/mixing/fruitbar",
+        "path": "/textures",
+        "op": "addmerge",
+        "value": {
+            "cantaloupe0": { "base": "foodiversity:item/food/grain/overlays/cantaloupe" },
+            "honeydewmelon0": { "base": "foodiversity:item/food/grain/overlays/honeydewmelon" },
+            "mirzamelon0": { "base": "foodiversity:item/food/grain/overlays/mirzamelon" },
+            "watermelon0": { "base": "foodiversity:item/food/grain/overlays/watermelon" }
+        }
+    }
+]

@@ -1,0 +1,31 @@
+[
+    {
+        "file": "expandedfoods:itemtypes/food/mixing/gozinaki",
+        "path": "/attributes/expandedNutritionProps",
+        "op": "addmerge",
+        "value": {
+      		"foodiversity:bdcropfruitsyrupportion-*" : { "saturation": 12, "health": 0.1, "foodcategory": "Fruit" },
+        }
+    },
+    {
+        "file": "expandedfoods:itemtypes/food/mixing/gozinaki",
+        "path": "/attributes/renderIngredientsByType",
+        "op": "addmerge",
+        "value": {
+			"*-syrup": {
+				"foodiversity:bdcropfruitsyrupportion-*": { "shape": "foodiversity:shapes/item/food/gozinaki/syrup.json", "name": "type", "textureMap": { "syrup": "{type}" } }
+			}
+        }
+    },
+    {
+        "file": "expandedfoods:itemtypes/food/mixing/gozinaki",
+        "path": "/textures",
+        "op": "addmerge",
+        "value": {
+		    "cantaloupe" : {"base": "bdcrop:block/food/pie/fill-cantaloupe" },
+		    "honeydewmelon" : {"base": "bdcrop:block/food/pie/fill-honeydewmelon" },
+		    "mirzamelon" : {"base": "bdcrop:block/food/pie/fill-mirzamelon" },
+		    "watermelon" : {"base": "bdcrop:block/food/pie/fill-watermelon" },
+        }
+    }
+]
