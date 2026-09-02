@@ -7,6 +7,18 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/main/VisualStudio.gitignore
 
+
+
+# Explicitly defined
+/tmp
+
+
+
+
+
+
+
+
 # User-specific files
 *.rsuser
 *.suo

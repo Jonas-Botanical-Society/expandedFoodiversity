@@ -22,6 +22,7 @@
                 "--tracelog",
                 "--addModPath",
                 "${workspaceFolder}/expandedFoodiversity/bin/Debug/Mods",
+                "${workspaceFolder}/tmp",
                 "--addOrigin",
                 "${workspaceFolder}/expandedFoodiversity/assets"
             ],
@@ -44,6 +45,7 @@
                 "--tracelog",
                 "--addModPath",
                 "${workspaceFolder}/expandedFoodiversity/bin/Debug/Mods",
+                 "${workspaceFolder}/tmp",
                  "--addOrigin",
                  "${workspaceFolder}/expandedFoodiversity/assets"
             ],
