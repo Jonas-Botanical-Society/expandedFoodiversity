@@ -7,8 +7,10 @@
         "Unknown"
     ],
     "description": "To be added",
-    "version": "1.0.0",
+    "version": "0.0.0",
     "dependencies": {
-        "game": "1.21.0"
+        "game": "1.22.0",
+        "expandedfoods": "2.0.0-dev.1",
+        "biodiversity":"1.2.0",
     }
 }
