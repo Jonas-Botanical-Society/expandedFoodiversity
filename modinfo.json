@@ -11,6 +11,7 @@
   "description": "Lorum Ipsum",
   "version": "1.0.0",
   "dependencies": {
-    "game": "1.22.0"
+    "game": "1.22.0",
+    "expandedfoods": "2.0.1>=2.0.0-dev.1",
   }
 }
